@@ -2,7 +2,7 @@
 % Please edit documentation in R/Diversity_Bede.R
 \name{Diversity_Bede}
 \alias{Diversity_Bede}
-\title{Model Function}
+\title{Diversity Function}
 \usage{
 Diversity_Bede(
   Input_df,
@@ -37,8 +37,7 @@ Diversity_Bede(
 \item{Rare}{logical: if you want this metric (See vegan). Default is TRUE}
 }
 \description{
-This Function applies a glm/glmm models applying model selection using AICc to input into plot_model_Bede()
-It can handle beta, gamma and poisson models with ease, gaussian is currently in development
+This function calculates different diversity metrics from a site by species df
 }
 \examples{
 SpeciesList<-paste0("Species",seq_along(1:15)) # 15 fake species
